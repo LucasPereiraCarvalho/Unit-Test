@@ -12,8 +12,8 @@ export class TodosComponent implements OnInit {
   constructor(private service: TodoService) {}
 
   ngOnInit() {
-    this.service.getTodos();
-    // this.service.getTodos().subscribe((t) => (this.todos = t));
+    // this.service.getTodos();
+    // this.service.getTodos().subscribe((t: any) => (this.todos = t));
   }
 
   add() {
@@ -25,6 +25,6 @@ export class TodosComponent implements OnInit {
   }
 
   delete(id: number) {
-    if (confirm('Are you sure?')) this.service.delete(id);
+    // if (confirm('Are you sure?')) this.service.delete(id);
   }
 }
