@@ -12,3 +12,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - **A**rrange: Organize o estado dos dados para configurá-los para teste.
 - **A**ct: Aja sobre os dados por meio de algum método que execute uma ação.
 - **A**ssert: Afirmar que o resultado de agir sobre esses dados é o que esperamos que seja.
+
+## Etapas antes de escrever o teste
+1. Analisar o metodo para saber quantos e quais testes serão necessários 
