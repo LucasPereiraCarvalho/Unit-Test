@@ -1,7 +1,7 @@
 ## Tecnologias
-**Karma**: Test runner JS que roda em Node.js.
-**Jasmine/Jest:** Framework para escrever teste para codigo Js. Jasmine já vem no pacote default do angular.
-**Ferramentas de teste:** Jasmine, Jest, Mocha,QUnit, etc.
+- **Karma**: Test runner JS que roda em Node.js.
+- **Jasmine/Jest:** Framework para escrever teste para codigo Js. Jasmine já vem no pacote default do angular.
+- **Ferramentas de teste:** Jasmine, Jest, Mocha,QUnit, etc.
 
 ## Oque são testes unitários
 É uma verificação feita com uma pequena porção do  código.
