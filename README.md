@@ -1,6 +1,12 @@
-# UnitTest
+## Tecnologias
+**Karma**: Test runner JS que roda em Node.js.
+**Jasmine/Jest:** Framework para escrever teste para codigo Js. Jasmine já vem no pacote default do angular.
+**Ferramentas de teste:** Jasmine, Jest, Mocha,QUnit, etc.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.5.
+## Oque são testes unitários
+É uma verificação feita com uma pequena porção do  código.
+Cada função ganha uma atenção detalhada, de modo a otimzar o processo de identificação de erros.
+
 
 ## Dicas
 1. Teste não pode ser frágil
@@ -15,3 +21,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Etapas antes de escrever o teste
 1. Analisar o metodo para saber quantos e quais testes serão necessários 
+
+## Patterns (Fácies de testar)
+* State Changes (métodos que modificam o valor de uma ou mais propriedades.)
+* Forms
+* Events (output properties)
+* Services
+
+## UnitTesting Limitations (Limitações nos testes, não é facil testar)
+* Routers
+* Template bidings (Se clicarmos em um botão no template, não podemos garantir se o método correspondente no componente é chamado ou não)
