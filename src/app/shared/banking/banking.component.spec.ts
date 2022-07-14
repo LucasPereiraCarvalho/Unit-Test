@@ -31,11 +31,21 @@ describe('BankingComponent', () => {
     expect(component.getCarteira).toBe(50);
   });
 
-  it('(U) setDepositar(): should transfer poupanca from carteira', () => {
+  it('(U) setSacar(): should transfer poupanca from carteira', () => {
     component.setSacar('10');
 
     expect(component.getCarteira).toBe(60);
     expect(component.getPoupanca).toBe(0);
+  });
+
+  it('(i) setSacar(): should transfer poupanca from carteira', () => {
+    let el = fixture.debugElement.nativeElement;
+
+    el.querySelector('#input-sacar').value = '10';
+    el.querySelector('#sacar').click();
+    fixture.detectChanges();
+
+    expect(el.querySelector('#get-carteira').textContent).toEqual('60');
   });
 
   it('(U) setSacar(): shoud transfer poupaca dont have string (isNaN) or poupaca < value', () => {
@@ -59,5 +69,15 @@ describe('BankingComponent', () => {
 
     expect(component.getCarteira).toBe(50);
     expect(component.getPoupanca).toBe(10);
+  });
+
+  it('(i) setDepositar(): should transfer carteira from poupanca', () => {
+    let el = fixture.debugElement.nativeElement;
+
+    el.querySelector('#input-depositar').value = '10';
+    el.querySelector('#depositar').click();
+    fixture.detectChanges();
+
+    expect(el.querySelector('#get-poupanca').textContent).toEqual('20');
   });
 });
