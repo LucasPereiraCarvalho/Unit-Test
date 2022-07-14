@@ -7,12 +7,12 @@
 É uma verificação feita com uma pequena porção do  código.
 Cada função ganha uma atenção detalhada, de modo a otimzar o processo de identificação de erros.
 
-
 ## Dicas
 1. Teste não pode ser frágil
 2. Funções pequenas / metodos (máximo 10 linhas de codigo)
 3. Nomeação adequada
 4. Responsabilidade unica
+5. Acompanhar code coverage
 
 ## 3 A's
 - **A**rrange: Organize o estado dos dados para configurá-los para teste.

@@ -4,11 +4,13 @@ import { HttpClientModule  } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BankingComponent } from './shared/banking/banking.component';
 
 
 @NgModule({
   declarations: [
     AppComponent
+    ,BankingComponent
   ],
   imports: [
     BrowserModule,
@@ -16,6 +18,6 @@ import { AppComponent } from './app.component';
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent ]
 })
 export class AppModule { }
