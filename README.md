@@ -36,27 +36,27 @@ Cada função ganha uma atenção detalhada, de modo a otimzar o processo de ide
 * Template bidings (Se clicarmos em um botão no template, não podemos garantir se o método correspondente no componente é chamado ou não)
 
 ## Funções
-* describe()
-- Usamos para definir um conjunto, é um grupo de testes.
+* describe(): 
+Usamos para definir um conjunto, é um grupo de testes.
 
-* It()
-- Definir uma especificação ou um teste.
+* It(): 
+Definir uma especificação ou um teste.
 
-* beforeEach()
-- A função vai executar antes de cada teste
+* beforeEach(): 
+A função vai executar antes de cada teste
 
-* afterEach()
-- A função vai executar após cada teste
+* afterEach(): 
+A função vai executar após cada teste
 
-* beforeAll()
-- A função executa uma vez para todos os testes
+* beforeAll(): 
+A função executa uma vez para todos os testes
 
-* afterAll()
-- A função executa depois uma vez para todos os testes
+* afterAll(): 
+A função executa depois uma vez para todos os testes
 
-* spyOn()
-- Pode colocar um "espião" em um método na classe, podemos verificar se esse método foi chamado, podemos mudar a implementação deste método.
-- Podemos retornar um valor diferente ou podemos lançar um erro
+* spyOn(): 
+Pode colocar um "espião" em um método na classe, podemos verificar se esse método foi chamado, podemos mudar a implementação deste método.
+Podemos retornar um valor diferente ou podemos lançar um erro
 
-* callFake()
-- Podemos mudar a implementação antes de chegar a esse método
+* callFake(): 
+Podemos mudar a implementação antes de chegar a esse método
