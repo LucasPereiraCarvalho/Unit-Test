@@ -1,14 +1,14 @@
 import { TestBed } from '@angular/core/testing';
 
+import { HttpClient } from '@angular/common/http';
 import {
   HttpClientTestingModule,
-  HttpTestingController,
+  HttpTestingController
 } from '@angular/common/http/testing';
-import { HttpClient } from '@angular/common/http';
 
-import { ListInvestimentsService } from './list-investiments.service';
 import { Investiments } from '../model/investiments';
 import { MOCK_LIST } from './list-investiments.mock';
+import { ListInvestimentsService } from './list-investiments.service';
 
 describe('ListInvestimentsService', () => {
   let service: ListInvestimentsService;
